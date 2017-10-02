@@ -1,0 +1,44 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '26.0.2'
+    useLibrary 'org.apache.http.legacy'
+    signingConfigs {
+        release {
+            keyAlias 'lee.wp14@gmail.com'
+            keyPassword 'leewp@google'
+            storeFile file('C:/Users/lee.wp14/Documents/Google/Android/keystore/lee.wp14.jks')
+            storePassword 'leewp14.12'
+        }
+    }
+    defaultConfig {
+        applicationId 'xposed.leewp14.NEClient'
+        minSdkVersion 9
+        targetSdkVersion 25
+        versionCode 1
+        versionName = "${versionCode}"
+        archivesBaseName = "${applicationId}-${versionName}"
+        signingConfig signingConfigs.release
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            zipAlignEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+    lintOptions {
+        abortOnError false
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    provided 'de.robv.android.xposed:api:53'
+    provided 'de.robv.android.xposed:api:53:sources'
+    compile 'dnsjava:dnsjava:2.1.8'
+}

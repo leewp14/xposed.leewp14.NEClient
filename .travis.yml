@@ -1,0 +1,42 @@
+language: android
+
+jdk:
+  - oraclejdk8
+
+
+android:
+  components:
+    # https://github.com/travis-ci/travis-ci/issues/6040#issuecomment-219367943
+    - tools
+    - tools
+    - build-tools-26.0.0
+    - android-26
+
+script:
+  - if [[ "${TRAVIS_PULL_REQUEST}" = "false" ]]; then
+        openssl aes-256-cbc -K $encrypted_3327ea27a2f5_key -iv $encrypted_3327ea27a2f5_iv -in Bin.jks.enc -out Bin.jks -d;
+        ./gradlew assembleRelease --stacktrace;
+        rm Bin.jks;
+    else
+        ./gradlew assembleDebug  --stacktrace;
+    fi
+
+
+before_deploy:
+  - cp app/build/outputs/apk/*-release.apk .
+  - export APK_PATH=$(ls *-release.apk)
+
+deploy:
+  provider: releases
+  api_key:
+    secure: $GITHUB_TOKEN
+  file: $APK_PATH
+  overwrite: true
+  on:
+    tags: true
+
+after_deploy:
+  - rvm install 2.2.2
+  - rvm use 2.2.2
+  - gem install fir-cli
+  - fir p $APK_PATH -T $FIR_TOKEN -c "`git cat-file tag $TRAVIS_TAG`"
