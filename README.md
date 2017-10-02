@@ -1,11 +1,13 @@
-# Unblock163MusicClient - Xposed
+# xposed.leewp14.NEClient
 
-Xposed version of EraserKing's [Unblock163MusicClient](https://github.com/EraserKing/Unblock163MusicClient).
+Modified version of bin456789's [Unblock163MusicClient-Xposed](https://github.com/bin456789/Unblock163MusicClient-Xposed).
 
 Compatible with app v3/v4.
 
 
 ## Thanks
+
+Thanks bin456789 for his xposed module version [https://github.com/bin456789/Unblock163MusicClient-Xposed]
 
 Thanks EraserKing for his Original Windows version [https://github.com/EraserKing/Unblock163MusicClient]
 
