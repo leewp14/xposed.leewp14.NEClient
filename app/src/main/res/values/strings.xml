@@ -1,26 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">NEClient</string>
-    <string name="xposed_description">xposed.leewp14.NEClient</string>
-    <string name="ok">确定</string>
-    <string name="cancel">取消</string>
+    <string name="app_name" translatable="false">NEClient</string>
+    <string name="xposed_description" translatable="false">xposed.leewp14.NEClient</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
 
-    <string name="confirm">确定</string>
-    <string name="source">来自</string>
+    <string name="confirm">Confirm</string>
+    <string name="source">Source</string>
 
-    <string name="hint_hide_icon">由于很少需要更改配置，本模块图标将从桌面上移除。\n\n下次可到 Xposed Installer 打开。</string>
-    <string name="hint_reboot_setting_changed">重启或结束音乐软件进程后生效</string>
-    <string name="hint_reboot_not_active">模块未激活，请先激活模块并重启手机</string>
+    <string name="hint_hide_icon">App icon will be hidden after first launch. \n\nYou may access this UI from Xposed Installer. </string>
+    <string name="hint_reboot_setting_changed">Reboot or relaunch NetEase Music for effects to take changes. </string>
+    <string name="hint_reboot_not_active">Module not active, kindly activate module and reboot. </string>
 
-    <string name="oversea_mode_title">海外模式</string>
-    <string name="oversea_mode_description">国内用户切勿勾选，否则会降低缓冲速度</string>
+    <string name="oversea_mode_title">Overseas Mode</string>
+    <string name="oversea_mode_description">Intended for users outside of Mainland China only. </string>
 
-    <string name="dislike_confirm_title">取消红心前确认</string>
-    <string name="dislike_confirm_question">确定取消红心？</string>
+    <string name="dislike_confirm_title">Disable favorite removal confirm</string>
+    <string name="dislike_confirm_question">Remove from favorites?</string>
 
-    <string name="prevent_gray_title">不变灰</string>
+    <string name="prevent_gray_title">Ungrey Song</string>
+    <string name="prevent_gray_description">Increase visibility in Night Mode</string>
 
-    <string name="active_now">立即激活</string>
-    <string name="xposed_installer_not_installed">Xposed Installer 未安装</string>
+    <string name="active_now">Activate</string>
+    <string name="xposed_installer_not_installed">Xposed Installer not found. </string>
 
 </resources>
