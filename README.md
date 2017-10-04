@@ -4,6 +4,9 @@ Modified version of bin456789's [Unblock163MusicClient-Xposed](https://github.co
 
 Compatible with app v3/v4.
 
+## Screenshot
+
+![screenshot](![GitHub Logo](/assets/img/layout-2017-10-04-190117.png))
 
 ## Thanks
 
