@@ -1,17 +1,26 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
-    <CheckBoxPreference
-        android:defaultValue="false"
-        android:key="OVERSEA_MODE"
-        android:summary="@string/oversea_mode_description"
-        android:title="@string/oversea_mode_title" />
-    <CheckBoxPreference
-        android:defaultValue="false"
-        android:key="DISLIKE_CONFIRM"
-        android:singleLine="false"
-        android:title="@string/dislike_confirm_title" />
-    <CheckBoxPreference
-        android:defaultValue="true"
-        android:key="PREVENT_GRAY"
-        android:summary="@string/prevent_gray_description"
-        android:title="@string/prevent_gray_title" />
+    <PreferenceCategory
+        android:key="pref_key_general_settings"
+        android:title="@string/pref_general_title">
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="OVERSEA_MODE"
+            android:summary="@string/oversea_mode_description"
+            android:title="@string/oversea_mode_title" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="pref_key_feature_settings"
+        android:title="@string/pref_ui_config_title">
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="DISLIKE_CONFIRM"
+            android:singleLine="false"
+            android:title="@string/dislike_confirm_title" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="PREVENT_GRAY"
+            android:summary="@string/prevent_gray_description"
+            android:title="@string/prevent_gray_title" />
+    </PreferenceCategory>
+
 </PreferenceScreen>

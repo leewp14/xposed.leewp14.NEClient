@@ -18,13 +18,12 @@ import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import xposed.leewp14.NEClient.ui.SettingsActivity;
 import de.robv.android.xposed.IXposedHookLoadPackage;
 import de.robv.android.xposed.XC_MethodHook;
 import de.robv.android.xposed.XC_MethodReplacement;
 import de.robv.android.xposed.callbacks.XC_LoadPackage.LoadPackageParam;
+import xposed.leewp14.NEClient.ui.SettingsActivity;
 
-import static xposed.leewp14.NEClient.CloudMusicPackage.Mam.findMamClass;
 import static de.robv.android.xposed.XposedBridge.hookAllMethods;
 import static de.robv.android.xposed.XposedBridge.hookMethod;
 import static de.robv.android.xposed.XposedBridge.invokeOriginalMethod;
@@ -36,6 +35,7 @@ import static de.robv.android.xposed.XposedHelpers.findAndHookMethod;
 import static de.robv.android.xposed.XposedHelpers.findClass;
 import static de.robv.android.xposed.XposedHelpers.getObjectField;
 import static de.robv.android.xposed.XposedHelpers.newInstance;
+import static xposed.leewp14.NEClient.CloudMusicPackage.Mam.findMamClass;
 
 @SuppressWarnings("deprecation")
 public class Main implements IXposedHookLoadPackage {
@@ -48,7 +48,7 @@ public class Main implements IXposedHookLoadPackage {
         if (lpparam.packageName.equals(BuildConfig.APPLICATION_ID)) {
             // make current module activated
             findAndHookMethod(findClass(SettingsActivity.class.getName(), lpparam.classLoader),
-                    "getActivatedModuleVersion", XC_MethodReplacement.returnConstant(BuildConfig.VERSION_CODE));
+                    "isModuleActive", XC_MethodReplacement.returnConstant(1));
         }
 
 

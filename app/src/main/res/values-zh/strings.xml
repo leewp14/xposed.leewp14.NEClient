@@ -15,4 +15,6 @@
     <string name="source">来自</string>
     <string name="xposed_installer_not_installed">Xposed Installer 未安装</string>
     <string name="prevent_gray_description">提高在夜间模式时歌曲的能见度</string>
+    <string name="pref_ui_config_title">界面设置</string>
+    <string name="pref_general_title">常规设置</string>
 </resources>

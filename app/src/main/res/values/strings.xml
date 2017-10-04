@@ -9,7 +9,7 @@
     <string name="source">Source</string>
 
     <string name="hint_hide_icon">App icon will be hidden after first launch. \n\nYou may access this UI from Xposed Installer. </string>
-    <string name="hint_reboot_setting_changed">Reboot or relaunch NetEase Music for effects to take changes. </string>
+    <string name="hint_reboot_setting_changed">Reboot or relaunch NetEase Music for changes to take effect. </string>
     <string name="hint_reboot_not_active">Module not active, kindly activate module and reboot. </string>
 
     <string name="oversea_mode_title">Overseas Mode</string>
@@ -23,5 +23,7 @@
 
     <string name="active_now">Activate</string>
     <string name="xposed_installer_not_installed">Xposed Installer not found. </string>
+    <string name="pref_general_title">General</string>
+    <string name="pref_ui_config_title">UI Configuration</string>
 
 </resources>

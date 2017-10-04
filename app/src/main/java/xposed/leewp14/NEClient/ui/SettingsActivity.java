@@ -22,8 +22,8 @@ import xposed.leewp14.NEClient.Utility;
 
 public class SettingsActivity extends PreferenceActivity implements OnSharedPreferenceChangeListener {
 
-    private int getActivatedModuleVersion() {
-        return -1;
+    private int isModuleActive() {
+        return 0;
     }
 
     @SuppressWarnings("deprecation")
@@ -39,7 +39,7 @@ public class SettingsActivity extends PreferenceActivity implements OnSharedPref
 
 
     private void checkState() {
-        if (getActivatedModuleVersion() == -1)
+        if (isModuleActive() == 0)
             showNotActive();
     }
 
@@ -55,6 +55,7 @@ public class SettingsActivity extends PreferenceActivity implements OnSharedPref
                 })
                 .setNegativeButton(R.string.cancel, null)
                 .show();
+
     }
 
     private void openXposed() {

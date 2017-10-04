@@ -19,6 +19,6 @@
 -dontwarn org.xbill.DNS.spi.DNSJavaNameServiceDescriptor
 -keep public class xposed.leewp14.NEClient.Main
 -keepclassmembernames class xposed.leewp14.NEClient.ui.SettingsActivity {
-    int getActivatedModuleVersion();
+    int isModuleActive();
 }
 
