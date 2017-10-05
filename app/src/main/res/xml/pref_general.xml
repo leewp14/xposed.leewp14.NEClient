@@ -22,5 +22,14 @@
             android:summary="@string/prevent_gray_description"
             android:title="@string/prevent_gray_title" />
     </PreferenceCategory>
-
+    <PreferenceCategory
+        android:key="pref_module_info"
+        android:title="Module Info">
+        <Preference
+            android:key="pref_version"
+            android:persistent="false"
+            android:selectable="false"
+            android:summary="@string/versionName"
+            android:title="Version" />
+    </PreferenceCategory>
 </PreferenceScreen>
