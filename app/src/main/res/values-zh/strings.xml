@@ -17,4 +17,6 @@
     <string name="prevent_gray_description">提高在夜间模式时歌曲的能见度</string>
     <string name="pref_ui_config_title">界面设置</string>
     <string name="pref_general_title">常规设置</string>
+    <string name="pref_module_info_title">模块信息</string>
+    <string name="pref_version_title">版本</string>
 </resources>

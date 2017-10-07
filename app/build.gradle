@@ -16,10 +16,10 @@ android {
         applicationId 'xposed.leewp14.NEClient'
         minSdkVersion 9
         targetSdkVersion 25
-        versionName '2017.10-4'
+        versionName '2017.10-5'
         archivesBaseName = "${applicationId}-${versionName}"
         signingConfig signingConfigs.release
-        versionCode 2017104
+        versionCode 2017105
     }
 
     applicationVariants.all { variant ->

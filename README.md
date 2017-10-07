@@ -6,7 +6,7 @@ Compatible with app v3/v4.
 
 ## Screenshot
 
-![screenshot](/assets/img/layout-2017-10-04-190117.png)
+![screenshot](/assets/img/screenshot.png)
 
 ## Thanks
 
