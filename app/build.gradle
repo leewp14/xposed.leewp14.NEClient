@@ -6,10 +6,18 @@ android {
     useLibrary 'org.apache.http.legacy'
     signingConfigs {
         release {
-            keyAlias 'lee.wp14@gmail.com'
-            keyPassword 'leewp@google'
-            storeFile file('C:/Users/lee.wp14/Documents/Google/Android/keystore/lee.wp14.jks')
-            storePassword 'leewp14.12'
+            storeFile file('C:\\Users\\lee.wp14\\Documents\\Google\\Android\\keystore\\lee.wp14.jks')
+            def console = System.console()
+            if (console) {
+                keyAlias = console.readLine('> Please enter keyAlias: ')
+            }
+            File propsFile = file("C:\\Users\\lee.wp14\\Documents\\Google\\Android\\keystore\\lee.wp14.properties");
+            if (propsFile.exists()) {
+                Properties props = new Properties();
+                props.load(new FileInputStream(propsFile))
+                storePassword props.getProperty('key.store.password')
+                keyPassword props.getProperty('key.alias.password')
+            }
         }
     }
     defaultConfig {

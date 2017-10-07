@@ -4,6 +4,10 @@ Modified version of bin456789's [Unblock163MusicClient-Xposed](https://github.co
 
 Compatible with app v3/v4.
 
+## Download
+
+[GitHub Releases](https://github.com/leewp14/xposed.leewp14.NEClient/releases)
+
 ## Screenshot
 
 ![screenshot](/assets/img/screenshot.png)
