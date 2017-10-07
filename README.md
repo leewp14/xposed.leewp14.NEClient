@@ -14,10 +14,12 @@ Compatible with app v3/v4.
 
 ![screenshot](/assets/img/screenshot.png)
 
-## Thanks
+## Credits
 
-Thanks bin456789 for his xposed module version [https://github.com/bin456789/Unblock163MusicClient-Xposed]
+Thanks to :-
 
-Thanks EraserKing for his Original Windows version [https://github.com/EraserKing/Unblock163MusicClient]
+bin456789 for his xposed module version [https://github.com/bin456789/Unblock163MusicClient-Xposed]
 
-Thanks yanunon for his API analysis! [https://github.com/yanunon/NeteaseCloudMusic]
+EraserKing for his Original Windows version [https://github.com/EraserKing/Unblock163MusicClient]
+
+yanunon for his API analysis [https://github.com/yanunon/NeteaseCloudMusic]
