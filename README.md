@@ -6,7 +6,9 @@ Compatible with app v3/v4.
 
 ## Download
 
-[GitHub Releases](https://github.com/leewp14/xposed.leewp14.NEClient/releases)
+> [GitHub Releases](https://github.com/leewp14/xposed.leewp14.NEClient/releases)
+
+> [Xposed Module Repository](http://repo.xposed.info/module/xposed.leewp14.neclient)
 
 ## Screenshot
 
