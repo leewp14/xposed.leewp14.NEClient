@@ -29,7 +29,7 @@ class Settings {
     }
 
     static boolean isPreventGray() {
-        return getModuleSharedPreferences().getBoolean("PREVENT_GRAY", false);
+        return getModuleSharedPreferences().getBoolean("PREVENT_GRAY", true);
     }
 
     static String getDnsServer() {
