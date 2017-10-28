@@ -31,5 +31,19 @@
             android:selectable="false"
             android:summary="@string/versionName"
             android:title="@string/pref_version_title" />
+        <Preference
+            android:key="pref_contributor"
+            android:persistent="false"
+            android:selectable="false"
+            android:summary="bin456789, lee.wp14"
+            android:title="Behind the works" />
+        <Preference
+            android:key="pref_contribute"
+            android:summary="Help us by fixing NetEase's API issue now!"
+            android:title="I want to help">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://goo.gl/o3oVMS" />
+        </Preference>
     </PreferenceCategory>
 </PreferenceScreen>
